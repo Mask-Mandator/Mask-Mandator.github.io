@@ -7,10 +7,40 @@
     padding: 0.2em 0;
 }
 
-/* ==========================================================================
-   Jeongbin's custom styles
-   ========================================================================== */
+/* Custom Fonts */
 
+@font-face {
+    font-family: 'Dubai Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Dubai Regular'), url('../fonts/Dubai-Regular.woff') format('woff');
+}
+    
+
+@font-face {
+    font-family: 'Dubai Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Dubai Light'), url('../fonts/Dubai-Light.woff') format('woff');
+}
+    
+
+@font-face {
+    font-family: 'Dubai Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Dubai Medium'), url('../fonts/Dubai-Medium.woff') format('woff');
+}
+    
+
+@font-face {
+    font-family: 'Dubai Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Dubai Bold'), url('../fonts/Dubai-Bold.woff') format('woff');
+}
+
+/* Custom Styles */
 html, body {
     width:100%;
     height:100%;
@@ -39,8 +69,7 @@ p { line-height: 1.333em; }
 
 p.topnav {
     color: white;
-    font-family: 'Dubai';
-    font-weight: bold;
+    font-family: 'Dubai Bold';
     width: 10%;
     text-align: center;
 }
@@ -49,17 +78,15 @@ p.topnav {
 
 p.head {
     text-align: center;
-    font-family: 'Dubai';
+    font-family: 'Dubai Bold';
     font-size: 48pt;
-    font-weight: bold;
     
 }
 
 p.sub {
     text-align: center;
-    font-family: 'Dubai';
+    font-family: 'Dubai Bold';
     font-size: 24pt;
-    font-weight: normal;
 }
 
 /* Image Style */
@@ -83,8 +110,7 @@ img {
 
 p.footer {
     color: white;
-    font-family: 'Dubai';
-    font-weight: bold;
+    font-family: 'Dubai Bold';
     width: 10%;
     text-align: center;
 }
