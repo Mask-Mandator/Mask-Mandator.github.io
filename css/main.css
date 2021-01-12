@@ -61,7 +61,7 @@ p { line-height: 1.333em; }
 #topnav {
     display: flex;
     width: 100%;
-    height: 30px;
+    height: 5%;
     top: 0;
     background-color: #3DB8CC;
 
@@ -79,14 +79,14 @@ p.topnav {
 p.head {
     text-align: center;
     font-family: 'Dubai Bold';
-    font-size: 48pt;
+    font-size: 2em;
     
 }
 
 p.sub {
     text-align: center;
     font-family: 'Dubai Bold';
-    font-size: 24pt;
+    font-size: 1em;
 }
 
 /* Image Style */
@@ -95,7 +95,8 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 25%;
+    height: 25%;
     
 }
 
