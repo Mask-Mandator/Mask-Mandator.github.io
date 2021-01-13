@@ -20,17 +20,24 @@
 <body>
 
     <div id="page-content">
+
+    <!-- Progress Bar-->
+        <div class="progress-bar"
+        data-0p="width: 0%;"
+        data-100p="width: 100%;"
+        data-anchor-target="#helper">
+        </div>
     
     <!-- Topnav Div  -->
     <div id="topnav" 
-        data-0p="opacity: 1; transform:translate(0%,0%);"
-        data-1p="opacity: 1; transform:translate(0%,50%);"
+        data-0p="opacity: 1; transform:translate(0%,-100%);"
+        data-5p="opacity: 1; transform:translate(0%,0%);"
         data-anchor-target="#helper"
         >
         <p class="topnav"></p>
-        <p class="topnav">  Home  </p>
-        <p class="topnav">  Info  </p>
-        <p class="topnav">  About Us  </p>
+        <a class="topnav" href="index.html">  Home  </a>
+        <a class="topnav" href="info.html">  Info  </a>
+        <a class="topnav" href="about.html">  About Us  </a>
     </div>
 
     <!-- Scroll Down Div -->
@@ -98,6 +105,13 @@
             <div class="marker yellow"></div>
         </div>
     </div>
+
+
+    <div class="devpost">
+        <p class="head">Check out our submission video for HackRPI!</p>
+        <iframe src="https://www.youtube.com/embed/wAYhhG5xr1s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
 
     <!-- Footer Div  -->
     <div id="footer" 
