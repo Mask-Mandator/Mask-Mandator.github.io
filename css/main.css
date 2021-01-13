@@ -134,20 +134,18 @@ iframe {
 
 /* Footer Styles */
 #footer {
-    display: flex;
+    display: block;
     width: 100%;
     bottom: 100%;
-    height: 10%;
+    height: 500px;
     background-color: #3DB8CC;
 }
 
 p.footer {
-    display: block;
-    width: 100%;
-    height: 20%;
-    bottom: 100%;
-    background-color: #3DB8CC;
-    z-index: 1;
+    color: white;
+    text-align: center;
+    font-family: 'Dubai Bold';
+    font-size: 1em;
 }
 
 /* full width/height container */
