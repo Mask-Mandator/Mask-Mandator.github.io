@@ -132,6 +132,10 @@ iframe {
     padding: 5%;
 }
 
+.linkedin {
+    display: flex;
+}
+
 /* Footer Styles */
 #footer {
     display: block;
