@@ -133,7 +133,9 @@ iframe {
 }
 
 .linkedin {
+    position: fixed;
     display: flex;
+    top: 10%;
 }
 
 /* Footer Styles */
