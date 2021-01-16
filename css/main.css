@@ -94,14 +94,23 @@ a.topnav {
 p.head {
     text-align: center;
     font-family: 'Dubai Bold';
-    font-size: 2.5em;
+    font-size: 5em;
     
+}
+
+p.invisible {
+    text-align: center;
+    font-family: 'Dubai Bold';
+    font-size: 3em;
+    color: #fff;
 }
 
 p.sub {
     text-align: center;
     font-family: 'Dubai Bold';
-    font-size: 1.5em;
+    font-size: 2em;
+    color: #C39B77;
+    text-align: center;
 }
 
 /* Image Style */
@@ -110,8 +119,8 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 25%;
-    height: 25%;
+    width: 35%;
+    height: 35%;
     padding: 2em;
     
 }
