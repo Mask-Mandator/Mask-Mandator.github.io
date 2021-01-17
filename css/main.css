@@ -54,7 +54,6 @@ html, body {
     text-align: right;
     color: #fff;
 }
-p, h1 { margin: 0; }
 h1 { margin-bottom: 0.2em; }
 p { line-height: 1.333em; }
 
@@ -92,38 +91,41 @@ a.topnav {
 /* P styles */
 
 p.head {
-    text-align: center;
     font-family: 'Dubai Bold';
-    font-size: 5em;
+    font-size: 3em;
+    position: fixed;
+    text-align: center;
+    top: 50%;
     
 }
 
 p.invisible {
     text-align: center;
     font-family: 'Dubai Bold';
-    font-size: 3em;
+    font-size: 2em;
     color: #fff;
 }
 
 p.sub {
-    text-align: center;
     font-family: 'Dubai Bold';
     font-size: 2em;
     color: #C39B77;
+    position: fixed;
     text-align: center;
+    top: 50%;
 }
 
 /* Image Style */
 
 img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 35%;
-    height: 35%;
+    position: fixed;
+    width: 50%;
+    height: auto;
+    left: 25%;
+    top: 25%;
     padding: 2em;
-    
 }
+
 
 iframe {
     display: block;
@@ -140,6 +142,12 @@ iframe {
     margin-left: 10%;
     margin-right: 10%;
     padding: 5%;
+}
+
+.mask-mandator, .google {
+    align-self: center;
+    align-content: center;
+    text-align: center;
 }
 
 .linkedin {
@@ -373,14 +381,6 @@ div#page-content {
         display: table-header-group; /* h5bp.com/t */
     }
 
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
-
-    img {
-        max-width: 100% !important;
-    }
 
     @page {
         margin: 0.5cm;
