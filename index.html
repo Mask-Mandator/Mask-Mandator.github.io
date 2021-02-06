@@ -1,9 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js">
-
-</html>
 <head>
-   
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Mask Mandator</title>
@@ -15,141 +11,24 @@
     <script type="text/javascript" src="js/skrollr.min.js"></script>
     <script type="text/javascript" src="js/vendor/jquery-1.9.1.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 </head>
-
-<body>
-
-    <div id="page-content">
-
-    <!-- Progress Bar-->
-        <div class="progress-bar"
-        data-0p="width: 0%;"
-        data-400p="width: 100%;"
-        data-anchor-target="#helper">
-        </div>
-    
-    <!-- Topnav Div  -->
-    <div id="topnav" 
-        data-0p="opacity: 1; transform:translate(0%,-100%);"
-        data-5p="opacity: 1; transform:translate(0%,0%);"
-        data-anchor-target="#helper"
-        >
-        <p class="topnav"></p>
-        <a class="topnav" href="index.html">  Home  </a>
-        <a class="topnav" href="buy.html">  Buy  </a>
+<body style="overflow-x: hidden; overflow-y: hidden">
+    <div id="topnav">
+        <a class="topnav" style="font-size: 2vh; top: 50% - .5vw;" href="index.html" >Home</a>
+        <a class="topnav" style="font-size: 2vh; top: 50% - .5vw;" href="about.html">About Us</a>
+        <a class="topnav"style="font-size: 2vh; top: 50% - .5vw;"  href="find.html">Buy</a>
     </div>
 
-    <!-- Scroll Down Div -->
-    <div id="scroll-down"
-        data-anchor-target="#helper">
-        <p class="head">Scroll Down...</p>
-    
+    <div style="text-align: center; margin-top: 20vh;"><h1 style="top: 50vh; font-size: 7.5vw;">Mask Mandator</h1></div>
 
-    </div>
-    
+    <div style="position: absolute; width: 100vw; top: 10vh;" data-relative-input="true" id="scene">
+        <div id="full" style="width: 100vw; height: 100vh;" data-depth="0"><img src="./img/noeyes.png"></div>
+        <div id="full" style="width: 100vw; height: 100vh;" data-depth="-0.3"><img src="./img/eyes.png"></div>
+      </div>
 
-
-    <!-- Mask Mandator Div -->
-    <div id="mask-mandator"> 
-        <!-- Logo -->
-        <div
-        data-5p="opacity: 0;"
-        data-35p="opacity: 1;"
-        data-70p="opacity: 0;"
-        data-anchor-target="#helper"
-        >
-        <img id="logo" src="../img/mask-mandator-transparent.png"></div>
-  
-
-        <!-- Mask Mandator Name (Head Text)-->
-        <div
-        data-75p="opacity: 0;"
-        data-95p="opacity: 1;"
-        data-anchor-target="#helper">
-        <p class="head">Mask Mandator</p> 
-        </div>
-
-        <!-- Mask Mandator Desc. (Sub Text) -->
-        <div
-        data-0="opacity: 0;"
-        data-95p="opacity: 0;"
-        data-125p="opacity: 1;"
-        data-anchor-target="#helper">
-        <p class="sub">   Do we have a tagline?</p>
-        <p class="sub">No. Will we have one soon?</p>
-        <p class="sub">Probably, give us a bit.</p>
-        <p class="sub">Also what is this logo? You tell me!</p>
-        </div>
-    </div>
-
-
-    <!-- Google Div -->
-    <div id="google"> 
-        
-        <!-- Google Name (Head Text)-->
-        <div
-        data-0p="opacity: 0;"
-        data-195p="opacity: 0;"
-        data-235p="opacity: 1;"
-        data-235p="opacity: 1;"
-        data-275p="opacity: 1;"
-        data-315p="opacity: 0;"
-        data-anchor-target="#helper">
-        <p class="head">Recipient of Google Cloud COVID-19 Hackathon Fund</p>
-        </div>
-        <!-- Logo -->
-        <div
-        data-0p="opacity: 0;"
-        data-205p="opacity: 0;"
-        data-235p="opacity: 1;"
-        data-315p="opacity: 1;"
-        data-395p="opacity: 0;"
-        data-anchor-target="#helper"
-        ><img id="logo" src="../img/google.png"></div>
-
-
-    <div class="devpost">
-        <p class="head">Check out our submission video for HackRPI!</p>
-        <iframe src="https://www.youtube.com/embed/wAYhhG5xr1s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-
-    <div class="linkedin">
-        <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
-        <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="arjun-khorana"><a class="LI-simple-link" href='https://www.linkedin.com/in/arjun-khorana?trk=profile-badge'>Arjun Khorana</a></div>
-        <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="jacob-zietek"><a class="LI-simple-link" href='https://www.linkedin.com/in/jacob-zietek?trk=profile-badge%27%3E'>Jacob Zietek</a></div>
-        <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="bryan-yakimisky-7294921b6"><a class="LI-simple-link" href='https://www.linkedin.com/in/bryan-yakimisky-7294921b6?trk=profile-badge%27%3E'>Bryan Yakimisky</a></div>
-        <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="jeongbin-lee-a715161b5"><a class="LI-simple-link" href='https://www.linkedin.com/in/jeongbin-lee-a715161b5?trk=profile-badge%27%3E'>Jeongbin Lee</a></div>
-    </div>
-
-
-    
-    <!-- Footer Div  -->
-    <div id="footer" 
-        data-35.0p="opacity: 0;"
-        data-40.0p="opacity: 1;"
-        data-anchor-target="#helper"
-        >
-        <p class="footer">  Copyright © 2020 Mask Mandator. All rights reserved. </p>
-        <p class="footer">  United States  </p>
-    </div>
-
-    <div id="helper">
-        <div class="marker red"></div>
-        <div class="marker green"></div>
-        <div class="marker blue"></div>
-        <div class="marker yellow"></div>
-    </div>
-</div>
-
-
-</div>
-    
-
-    <!-- Demo content -->
-
-    <!-- Include Skrollr.js -->
-    <script src="js/skrollr.min.js"></script>
-    <script type="text/javascript">
-        var s = skrollr.init();
+    <script>
+        var scene = document.getElementById('scene');
+        var parallaxInstance = new Parallax(scene);
     </script>
 </body>
