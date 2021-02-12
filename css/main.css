@@ -118,12 +118,8 @@ p.sub {
 /* Image Style */
 
 img {
-    position: fixed;
     width: 50%;
     height: auto;
-    left: 25%;
-    top: 25%;
-    padding: 2em;
 }
 
 
