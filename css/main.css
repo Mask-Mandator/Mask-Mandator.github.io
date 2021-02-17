@@ -44,6 +44,7 @@
 html, body {
     width:100%;
     height:100%;
+    
 }
 
 
@@ -54,7 +55,7 @@ html, body {
     text-align: right;
     color: #fff;
 }
-h1 { margin-bottom: 0.2em; }
+h1 { margin-bottom: 0.2em;}
 p { line-height: 1.333em; }
 
 /* Progress Bar */
@@ -92,8 +93,7 @@ a.topnav {
 
 p.head {
     font-family: 'Dubai Bold';
-    font-size: 3em;
-    position: fixed;
+    font-size: 1.5vw;
     text-align: center;
     top: 50%;
     
@@ -108,11 +108,9 @@ p.invisible {
 
 p.sub {
     font-family: 'Dubai Bold';
-    font-size: 2em;
+    font-size: 3vw;
     color: #C39B77;
-    position: fixed;
     text-align: center;
-    top: 50%;
 }
 
 /* Image Style */
@@ -186,18 +184,7 @@ p.footer {
     height: 25%;
     width: 100%;
 }
-.red {
-    background-color: red;
-}
-.green {
-    background-color: green;
-}
-.blue {
-    background-color: blue;
-}
-.yellow {
-    background-color: yellow;
-}
+
 
 div#page-content {
     overflow: hidden;

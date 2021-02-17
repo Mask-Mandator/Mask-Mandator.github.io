@@ -13,22 +13,26 @@
     <script type="text/javascript" src="js/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 </head>
-<body style="overflow-x: hidden; overflow-y: hidden">
+
+<body style="overflow-x: hidden;">
     <div id="topnav" style="text-align: center;">
         <a class="topnav" style="font-size: 2.5vh;" href="index.html" >Home</a>
         <a class="topnav" style="font-size: 2.5vh;" href="about.html">About</a>
         <a class="topnav"style="font-size: 2.5vh;"  href="find.html">Buy</a>
     </div>
+    <div data-start="transform:translate(0%, 0%); opacity: 1;" data-top-center="transform:translate(0, 100%); opacity: 0;" style="text-align: center; margin-top: 20vh; z-index: -1;"><h1 id = "test" style="top: 50vh; font-size: 7.5vw;">What Is Mask Mandator?</h1></div>
 
-    <div style="text-align: center; margin-top: 20vh;"><h1 id = "test" style="top: 50vh; font-size: 7.5vw;">Mask Mandator</h1></div>
-
-    <div data-relative-input="true" id="scene">
+    <div data-start="transform:translate(0%, 0%); opacity: 0;" data-top-center="transform:translate(0, 0); opacity: 1;" data-relative-input="true" id="scene">
         <div id="full" style="position:absolute;  width: 100%; margin-right: 25vw; margin-left: 25%; align-content: center;" data-depth="0"><img src="./img/noeyes.png"></div>
         <div id="full" style="position:absolute;  width: 100%; margin-right: 25vw; margin-left: 25%; align-content: center;" data-depth="-0.3"><img src="./img/eyes.png"></div>
       </div>
+      <div data-start="transform:translate(0%, 0%); opacity: 0;" data-top-center="opacity: 1;"> <p class="sub" style="text-align: center;"> Mask Mandator is a campus-wide system that enforces the proper usage of masks before entry into common areas and other population dense buildings.  </p></div>
+    <img src="">
 
     <script>
+        var s = skrollr.init();
         var scene = document.getElementById('scene');
         var parallaxInstance = new Parallax(scene);
     </script>
 </body>
+
