@@ -13,6 +13,38 @@
     <script type="text/javascript" src="js/vendor/jquery-1.9.1.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 </head>
-<body>
+<body style="overflow-x: clip;">
+    <div id="topnav" style="text-align: center;">
+        <a class="topnav" style="font-size: 2.5vh;" href="index.html" >Home</a>
+        <a class="topnav" style="font-size: 2.5vh;" href="about.html">About</a>
+        <a class="topnav"style="font-size: 2.5vh;"  href="buy.html">Buy</a>
+    </div>
+
+    <div style="text-align: center; margin-top: 25vh;"><h1 id = "test" style=" font-size: 5vw;">Products</h1></div>
+    <p class="sub" id = "test"> Select from the vast products available: </p>
+        <div id="options" style="margin-left: 12.5vw; margin-right: 12.5vw; width: 75vw; display: flex; flex-wrap: wrap;"> 
+    
+            <div id="product" onclick="var type = 'k-12'; redirect(type);"> <img src="../img/mask-mandator-transparent.png" style="width: 25vw;"> <p class="head">Mask Mandator K-12 Bundle</p> </div>
+            <div id="product" onclick="var type = 'u'; redirect(type);"> <img src="../img/mask-mandator-transparent.png" style="width: 25vw;"> <p class="head">Mask Mandator U Bundle</p>  </div>
+            <div id="product" onclick="var type = 'detector'; redirect(type);"> <img src="../img/mask-mandator-transparent.png" style="width: 25vw;"> <p class="head">Mask Detector</p>  </div>
+            <div id="product"> <img src="../img/mask-mandator-transparent.png" style="width: 25vw;"> <p class="head">Item 4</p> </div>
+            <div id="product"> <img src="../img/mask-mandator-transparent.png" style="width: 25vw;"> <p class="head">Item 5</p>  </div>
+            <div id="product"> <img src="../img/mask-mandator-transparent.png" style="width: 25vw;"> <p class="head">Item 6</p>  </div>
+        
+        </div>
+    
+    
+        <script>
+            function redirect(productName) {
+            window.location.href = "../productDesc.html";
+            localStorage.setItem("product",productName);
+            }
+            
+        </script>
+        <style>
+            #product {
+                cursor: pointer;
+            }
+        </style>
     
 </body>

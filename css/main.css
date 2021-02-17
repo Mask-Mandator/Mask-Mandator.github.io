@@ -120,6 +120,11 @@ img {
     height: auto;
 }
 
+button {
+    background-color: #3DB8CC; 
+    font-family: 'Dubai Bold';
+}
+
 
 iframe {
     display: block;
