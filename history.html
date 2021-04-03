@@ -15,20 +15,19 @@
 </head>
 
 <body style="overflow-x: hidden;">
-
     <div id="topnav" style="text-align: center;">
         <a class="topnav" style="font-size: 2.5vh;" href="index.html" >Home</a>
         <a class="topnav" style="font-size: 2.5vh;" href="about.html">About</a>
         <a class="topnav"style="font-size: 2.5vh;"  href="history.html">History</a>
     </div>
-    <div data-start="transform:translate(0%, 0%); opacity: 1;" data-top-center="transform:translate(0, 100%); opacity: 0;" style="text-align: center; margin-top: 20vh; z-index: -1;"><h1 id = "test" style="top: 50vh; font-size: 7.5vw;">
+    <div data-start="transform:translate(0%, 0%); opacity: 1;" data-top-center="transform:translate(0%, 50%); opacity: 0;" style="text-align: center; margin-top: 20vh; z-index: -1;"><h1 id = "test" style="top: 50vh; font-size: 7.5vw;">
         The History of Mask Mandator</h1></div>
 
-        <div data-start="transform:translate(0%, 0%); opacity: 0;" data-top-center="transform:translate(0, 0); opacity: 1;" data-relative-input="true" id="scene">
+        <div data-start="transform:translate(0%, 0%); opacity: 0;" data-top-center="transform:translate(0%, 0%); opacity: 1;" data-relative-input="true" id="scene">
             <div id="full" style="position:absolute;  width: 100%; margin-right: 25vw; margin-left: 25%; align-content: center;" data-depth="0"><img src="./img/noeyes.png"></div>
             <div id="full" style="position:absolute;  width: 100%; margin-right: 25vw; margin-left: 25%; align-content: center;" data-depth="-0.3"><img src="./img/eyes.png"></div>
           </div>
-          <div data-start="transform:translate(0%, 100%); opacity: 0;" data-bottom="opacity: 0;" data-center="transform:translate(0, 0%); opacity: 1;" style="text-align: center; margin-top: 10vh; z-index: -1;">
+          <div data-start="transform:translate(0%, 0%); opacity: 0;" data-bottom="opacity: 0;"data-top-center="transform:translate(0%, 0%); opacity: 1;" data-relative-input="true" style="opacity: 0; text-align: center; margin-top: 10vh; z-index: -1;">
             <h1 id = "test" style="top: 50vh; font-size: 2.0vw;">
                 Mask Mandator was originally a project for Hack RPI, a virtual hackathon. The team wanted to aid in the fight against the spread of COVID-19, and settled on making Mask Mandator. </h1>
         </div>
@@ -61,9 +60,14 @@
             <div id="full" style="position:absolute;  width: 50%; margin-right: 40vw; margin-left: 40vw; align-content: center;" data-depth="-0.3"><img src="./img/eyes.png"></div>
         </div>
 
-    <script>
-        var s = skrollr.init();
-        var scene = document.getElementById('scene');
-        var parallaxInstance = new Parallax(scene);
-    </script>
+        <script>
+            var s = skrollr.init();
+            var scene = document.getElementById('scene');
+            var parallaxInstance = new Parallax(scene);
+            setTimeout(function () {
+            skrollr.get().refresh();
+            }, 1000);
+            s.setTimeout();
+            
+        </script>
 </body>
