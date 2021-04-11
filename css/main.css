@@ -91,7 +91,7 @@ a.topnav {
 
 /* P styles */
 
-p.head {
+p.head, a.head {
     font-family: 'Dubai Bold';
     font-size: 1.5vw;
     text-align: center;
