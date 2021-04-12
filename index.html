@@ -3,7 +3,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Mask Mandator</title>
-    <meta name="description" content="Mask Mandator Tagline">
+    <meta name="description" content="Mask Mandator is a campus-wide system that enforces the proper usage of masks before entry into common areas and other population dense buildings for hospitals, businesses, and schools. With an AI model powered by Google Cloud Technologies, we are able to detect whether or not someone is wearing PPE with high accuracy. This, combined with existing databases potentially containing information like vaccine reports and infringement counts, is used to determine whether or not someone is allowed to enter a room or not. Our devices require nothing more than a Raspberry PI, a Raspberry PI camera, and a stable internet connection. Combined with already existing ID systems (such as card swipes or RFID), Mask Mandator links with your databases to track critical pieces of data regarding students/employees and handles all of the logic for you. We provide a low-cost solution for your needs during the pandemic and after, for places where masks are an essential part of life.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
@@ -13,7 +13,7 @@
     <script type="text/javascript" src="js/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 </head>
-<body style="overflow-x: hidden; overflow-y: hidden">
+<body style="overflow-y: hidden; overflow-x: hidden;">
     <div id="topnav" style="text-align: center;">
         <a class="topnav" style="font-size: 2.5vh;" href="index.html" >Home</a>
         <a class="topnav" style="font-size: 2.5vh;" href="about.html">About</a>
@@ -31,6 +31,9 @@
     <script>
         var scene = document.getElementById('scene');
         var parallaxInstance = new Parallax(scene);
-
+        setTimeout(function () {
+            skrollr.get().refresh();
+            }, 1000);
+            s.setTimeout();
     </script>
 </body>
